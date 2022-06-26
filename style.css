@@ -1,0 +1,35 @@
+/* LoginSysteem V1.1 */
+
+body {
+    background-color:#FFFFFF;
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:10pt;
+    color:#666666;
+    text-decoration:none;
+}
+
+input, textarea, select {
+    background-color:#FFFFFF;
+    border:1px solid #DEDEDE;
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:10pt;
+    color:#666666;
+    text-decoration:none;
+}
+
+td {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:10pt;
+    color:#666666;
+    text-decoration:none;
+}
+
+a:link,a:visited,a:active {
+    color:#666666;
+    text-decoration:underline;
+}
+
+a:hover {
+    color:#000099;
+    text-decoration:none;
+}

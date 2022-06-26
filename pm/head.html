@@ -1,0 +1,79 @@
+<style>
+/* These styles create the dropdown menus. */
+#navbar {
+   margin: 0;
+   padding: 0;}
+#navbar li {
+   list-style: none;
+   float: left; }
+#navbar li a {
+	display: block;
+	padding: 3px 8px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+#navbar li ul {
+   display: none;  }
+#navbar li:hover ul, #navbar li.hover ul {
+   position: absolute;
+   display: inline;
+   left: 0;
+   width: 100%;
+   margin: 0;
+   padding: 0; }
+#navbar li:hover li, #navbar li.hover li {
+   float: left; }
+</style>
+
+<script>
+// Javascript originally by Patrick Griffiths and Dan Webb.
+// http://htmldog.com/articles/suckerfish/dropdowns/
+sfHover = function() {
+   var sfEls = document.getElementById("navbar").getElementsByTagName("li");
+   for (var i=0; i<sfEls.length; i++) {
+      sfEls[i].onmouseover=function() {
+         this.className+=" hover";
+      }
+      sfEls[i].onmouseout=function() {
+         this.className=this.className.replace(new RegExp(" hover\\b"), "");
+      }
+   }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+</script>
+
+</head>
+<body>
+   <div id="wrap">
+      <ul id="navbar">
+         <li><a href="#">Exhibits and Events</a>
+            <ul>
+               <li><a href="#">Current Exhibit</a></li>
+               <li><a href="#">Coming Exhibit</a></li>
+               <li><a href="#">Events</a></li>
+            </ul>
+         </li>
+         <li><a href="#">About Us</a>
+            <ul>
+               <li><a href="#">About 1</a></li>
+               <li><a href="#">About Two</a></li>
+               <li><a href="#">Third About</a></li>
+            </ul>         
+         </li>
+         <li><a href="#">Contact</a>
+            <ul>
+               <li><a href="#">Via Email</a></li>
+               <li><a href="#">Stalk Us Elsewhere</a></li>
+            </ul>         
+         </li>
+         <li><a href="#">Press</a>
+            <ul>
+               <li><a href="#">Bench Press</a></li>
+               <li><a href="#">Military Press</a></li>
+               <li><a href="#">Press 'n Seal</a></li>
+            </ul>         
+         </li>
+      </ul>
+   </div>
